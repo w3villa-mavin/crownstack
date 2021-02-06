@@ -1,0 +1,40 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+.main {
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input{
+  width:80%
+}
+
+pre {
+  display: block;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 87.5%;
+  background-color: #212529;
+  min-width: 100%;
+  min-height: 100%;
+  .value {
+    color: #98c379
+
+  }
+  .key {
+    color: #abb2bf
+
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}

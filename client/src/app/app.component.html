@@ -1,0 +1,24 @@
+<div class="main">
+  <h1>Currency Exchange Rates</h1>
+  <div class="input">
+    <app-select-input (onChange)="fetchCurrencyData($event)"> </app-select-input>
+  </div>
+  <pre>
+      <div class=".flex-container"  *ngIf="data">
+        <div *ngIf="isLoading; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock><span class="key">Loading Data.... </span></ng-template>
+        <ng-template #elseBlock>
+          <code>
+            <span class="key">Base: </span><span class="value">{{data.base}}</span>
+            <span class="key">Date: </span><span class="value">{{data.date}}</span>
+            <span class="key">Rates: [
+              <span *ngFor="let item of data.rates | keyvalue">
+                <span class="key">{{item.key}}: </span><span class="value">{{item.value}}</span>
+              </span>
+              ]
+            </span>
+          </code>
+        </ng-template>
+      </div>
+  </pre>
+</div>

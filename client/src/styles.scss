@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.card {
+  max-width: 400px;
+}
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+main {
+  padding: 10px;
+}
